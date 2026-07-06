@@ -103,13 +103,27 @@ body main #animals-cards .card{
 body main form {
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
     align-items: start;
     justify-content: center;
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 body main form .field {
     width: 200px;
+}
+
+body main form .field label {
+    font-size: 14px;
+}
+
+body main form>input{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
 }
