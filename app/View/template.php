@@ -13,11 +13,11 @@
     <header>
         <div id="sign-in">
             <img src="images/user.png" alt="icon">
-            <a href="index.php">Home</a>
+            <a href="sign-in-template.php">Sign in</a>
         </div>
     </header>
     <main>
-
+            <?php include 'app/View/' . $content ?>
     </main>
     <footer>
         <div id="contacts">
