@@ -1,4 +1,4 @@
-
+        <a href="user">profile</a>
         <form action="POST">
             <h2 class="title">Sign in</h2>
             <div class="field">
@@ -13,5 +13,5 @@
         </form>
         <div class="altern">
             <span>Dont have an account?</span>
-            <a href="sign-up-template.php">Create new</a>
+            <a href="user?action=signUp">Create new</a>
         </div>

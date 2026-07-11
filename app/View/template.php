@@ -13,7 +13,11 @@
     <header>
         <div id="sign-in">
             <img src="images/user.png" alt="icon">
-            <a href="sign-in-template.php">Sign in</a>
+            <?php if(!str_contains(explode('/', $_SERVER['REQUEST_URI'])[2], 'user')):?>
+                <a href='user?action=signIn'>Sign in</a>
+            <?php else:?>
+                <a href='animals'>Home</a>
+            <?php endif?>
         </div>
     </header>
     <main>

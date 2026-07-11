@@ -17,9 +17,9 @@
                 <label for="">repeat password</label>
                 <input type="password">
             </div>
-            <input type="submit" value="Sign In">
+            <input type="submit" value="Sign Up">
         </form>
         <div class="altern">
             <span>Already have an account?</span>
-            <a href="sign-in-template.php">Sign up</a>
+            <a href="user?action=signIn">Sign in</a>
         </div>
