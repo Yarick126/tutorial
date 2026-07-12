@@ -116,6 +116,10 @@ body main form .field {
     width: 200px;
 }
 
+body main form .field input{
+    padding: 5px;
+}
+
 body main form .field label {
     font-size: 14px;
 }
@@ -126,4 +130,28 @@ body main form>input{
     padding: 10px;
     background-color: black;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+body main #profile-card{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+body main #profile-card img{
+    width: 150px;
+    height: 140px;
+}
+
+body main #profile-card .description{
+    display: flex;
+    flex-direction: column;
+}
+
+.errorMsg{
+    display: none;
+    color: red;
+    font-size: 14px;
+    font-weight:400;
 }

@@ -4,7 +4,6 @@
             $uriParts = explode('/',$_SERVER['REQUEST_URI']);
             $controller_name = 'Animals';
             $action_name = 'default';
-            print_r($uriParts);
             if($uriParts[2]){
                 $controller_name = explode('?',$uriParts[2])[0];
             }

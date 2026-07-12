@@ -2,12 +2,23 @@
 
 class User_Controller extends Controller {
 
+
     function __construct(){
         $this->model = new User_Model();
         $this->view = new View();
     }
     public function default(){
-       $this->view->generatePage('profile-template.php');
+        $userData = new stdClass();
+        if(isset($_POST['name'])){
+            $userData->name = $_POST['name'];
+        }
+        if(isset($_POST['email'])){
+            $userData->email = $_POST['email'];
+        }
+        if(isset($_POST['password'])){
+            $userData->password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        }
+       $this->view->generatePage('profile-template.php',$this->model->addUser($userData));
     }
 
     public function signIn(){
