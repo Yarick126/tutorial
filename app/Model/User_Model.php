@@ -8,6 +8,9 @@ class User_Model extends Model{
     }
 
     public function addUser($userData){
+        if(!$userData){
+            return;
+        }
         $ms = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_SCHEMA,DB_PORT);
         $user = $ms->query('SELECT  * FROM users WHERE email = ' . $userData->email)->fetch_assoc();
         if($user){

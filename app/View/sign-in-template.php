@@ -1,4 +1,4 @@
-        <a href="user">profile</a>
+
         <form action="POST">
             <h2 class="title">Sign in</h2>
             <div class="field">
