@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+}
 html{
     width: 100%;
 }
@@ -22,6 +24,8 @@ body{
 header{
     background-color: black;
     padding: 30px;
+    display: flex;
+    flex-direction: row;
 }
 header #sign-in{
     display: flex;
@@ -32,9 +36,17 @@ header #sign-in{
 header #sign-in a{
     color: white;
     font-size: 40px;
-    text-decoration: none;
 }
 header #sign-in img {
+    width: 34px;
+    height: 34px;
+}
+header #logout{
+    display: flex;
+    flex-direction: row;
+}
+
+header #logout img{
     width: 34px;
     height: 34px;
 }
@@ -160,4 +172,8 @@ body main #profile-card .description{
     color: red;
     font-size: 14px;
     font-weight:400;
+}
+
+.show {
+    display: block;
 }

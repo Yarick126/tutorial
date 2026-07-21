@@ -14,10 +14,14 @@
         <div id="sign-in">
             <img src="images/user.png" alt="icon">
             <?php if(!str_contains(explode('/', $_SERVER['REQUEST_URI'])[2], 'user')):?>
-                <a href='user?action=signIn'>Sign in</a>
+                <a href='user?action=signInForm'>Sign in</a>
             <?php else:?>
                 <a href='animals'>Home</a>
             <?php endif?>
+        </div>
+        <div id="logout">
+            <img src="images/log-out.png" alt="icon">
+            <a href="user?action=logout">Logout</a>
         </div>
     </header>
     <main>

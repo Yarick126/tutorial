@@ -1,5 +1,5 @@
 
-        <form onsubmit="validateForm()" action="user" method="POST">
+        <form onsubmit="validateForm()" action="user?action=register" method="POST">
             <h2 class="title">Sign up</h2>
             <div class="field">
                 <label for="1">name</label>
@@ -22,5 +22,5 @@
         </form>
         <div class="altern">
             <span>Already have an account?</span>
-            <a href="user?action=signIn">Sign in</a>
+            <a href="user?action=signInForm">Sign in</a>
         </div>
